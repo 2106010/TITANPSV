@@ -14,7 +14,7 @@
     width: 50%; 
     max-width: 600px; 
     height: auto; 
-    margin-right: 4rem; 
+    margin-right: 2rem; 
     object-fit: contain; 
     animation: slideIn 1s ease-out;
     transition: transform 0.3s ease;
@@ -122,15 +122,17 @@ nav a:hover {
 }
 
 .banner {
-    background:  #073267; 
+    background-image:url(fondo.jpg); 
+    background-size:100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row; 
-    padding: 2rem 2rem; 
-    text-align: center; 
-    width: 100%; 
-    color: white; 
+    flex-direction: row; /* Coloca la imagen y el texto en una fila */
+    padding: 2rem 1rem; /* Espaciado interno */
+    text-align: center; /* Alinea el texto */
+    height: 550px;
+    width: 100%; /* Ocupa todo el ancho */
+    color: white; /* Color del texto */
 }
 
 body {

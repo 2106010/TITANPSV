@@ -11,11 +11,11 @@
 }
 
 .banner-image {
-    width: 50%; /* La imagen ocupa la mitad del ancho */
-    max-width: 600px; /* Limita el ancho máximo de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 4rem; /* Espaciado entre la imagen y el texto */
-    object-fit: contain; /* Asegura que la imagen se vea completa */
+    width: 50%; 
+    max-width: 600px; 
+    height: auto; 
+    margin-right: 4rem; 
+    object-fit: contain; 
     animation: slideIn 1s ease-out;
     transition: transform 0.3s ease;
 }
@@ -37,28 +37,28 @@
 }
 
 .slogan {
-    font-size: 1.5rem; /* Tamaño del texto */
-    line-height: 1.8; /* Espaciado entre líneas */
-    margin-bottom: 1rem; /* Espaciado debajo del texto */
-    animation: fadeIn 1.5s ease-out; /* Animación de entrada */
+    font-size: 1.5rem; 
+    line-height: 1.8; 
+    margin-bottom: 1rem; 
+    animation: fadeIn 1.5s ease-out; 
     color: white;
-    max-width: 50%; /* Limita el ancho del texto */
+    max-width: 50%; 
 }
 
 .slogan a {
-    display: inline-block; /* Hace que el enlace sea un bloque en línea */
-    margin-top: 1rem; /* Espaciado superior */
-    padding: 0.5rem 1rem; /* Espaciado interno del botón */
-    background-color: #d1a03f; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    text-decoration: none; /* Elimina el subrayado */
-    border-radius: 0.5rem; /* Bordes redondeados */
-    font-weight: bold; /* Texto en negrita */
-    transition: background-color 0.3s ease; /* Transición suave */
+    display: inline-block; 
+    margin-top: 1rem; 
+    padding: 0.5rem 1rem; 
+    background-color: #d1a03f; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 0.5rem; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
 }
 
 .slogan a:hover {
-    background-color: #b8862f; /* Color de fondo al pasar el cursor */
+    background-color: #b8862f; 
 }
 
 nav {
@@ -69,11 +69,11 @@ nav {
     color: black;
     padding: 1rem 2rem;
     width: 100%;
-    position: fixed; /* Hace que el nav sea fijo */
-    top: 0; /* Lo posiciona en la parte superior de la página */
-    left: 0; /* Asegura que esté alineado a la izquierda */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añade una sombra para diferenciarlo del contenido */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 nav .logo {
@@ -111,26 +111,26 @@ nav a:hover {
     display: none;
     background: none;
     border: none;
-    font-size: 1.5rem; /* Ajusta el tamaño del icono */
+    font-size: 1.5rem; 
     cursor: pointer;
     color: black;
     position: absolute;
-    top: 1rem; /* Ajusta la posición vertical */
-    right: 1rem; /* Ajusta la posición horizontal */
-    width: auto; /* Asegura que el botón no abarque toda la pantalla */
-    height: auto; /* Asegura que el botón no abarque toda la pantalla */
+    top: 1rem; 
+    right: 1rem; 
+    width: auto; 
+    height: auto; 
 }
 
 .banner {
-    background:  #073267; /* Degradado que termina en el centro y regresa */
+    background:  #073267; 
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row; /* Coloca la imagen y el texto en una fila */
-    padding: 2rem 2rem; /* Espaciado interno */
-    text-align: center; /* Alinea el texto a la izquierda */
-    width: 100%; /* Ocupa todo el ancho */
-    color: white; /* Color del texto */
+    flex-direction: row; 
+    padding: 2rem 2rem; 
+    text-align: center; 
+    width: 100%; 
+    color: white; 
 }
 
 body {
@@ -141,7 +141,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding-top: 4rem; /* Añade un espacio para evitar que el contenido quede oculto detrás del nav */
+    padding-top: 4rem; 
 }
 
 main {
@@ -282,15 +282,10 @@ button:hover {
 
 #map {
     width: 100%;
-}
-
-#map{
-    width: 100%;
     height: 23.125rem;
     border: solid 1px #ccc;
     border-radius: 0.625rem;
 }
-
 
 /* Responsive */
 @media screen and (max-width: 768px) {
@@ -361,18 +356,18 @@ button:hover {
 
     .gallery {
         flex-direction: column;
-        padding: 1rem; /* Reduce el padding en pantallas pequeñas */
+        padding: 1rem; 
     }
 
     .gallery-item {
         width: 100%;
-        max-width: none; /* Permite que los items ocupen todo el ancho */
-        margin-bottom: 2rem; /* Añade espacio entre los items */
+        max-width: none;
+        margin-bottom: 2rem; 
     }
 
     .whatsapp-float {
-        bottom: 1rem; /* Ajusta la posición del botón en la parte inferior */
-        right: 1rem; /* Ajusta la posición del botón en la parte derecha */
+        bottom: 1rem; 
+        right: 1rem;
     }
 
     footer {
@@ -388,22 +383,20 @@ button:hover {
     }
 
     .banner {
-        flex-direction: column; /* Cambia la dirección a columna para dispositivos móviles */
-        text-align: center; /* Centra el texto */
+        flex-direction: column; 
+        text-align: center; 
     }
 
     .banner-image {
-        width: 80%; /* Aumenta el tamaño de la imagen al 80% del ancho del contenedor */
-        max-width: 400px; /* Limita el ancho máximo de la imagen */
-        margin-bottom: 1.5rem; /* Añade un poco más de espacio debajo de la imagen */
+        width: 80%; 
+        max-width: 400px; 
+        margin-bottom: 1.5rem; 
     }
 
     .slogan {
-        max-width: 90%; /* Asegura que el texto no ocupe todo el ancho */
+        max-width: 90%; 
     }
 }
-
-
 
 /* Ajustes específicos para dispositivos móviles */
 @media screen and (max-width: 768px) {
@@ -442,7 +435,7 @@ button:hover {
     padding: 3rem;
     gap: 2rem;
     width: 100%;
-    flex-wrap: wrap; /* Asegura que los elementos se ajusten en pantallas pequeñas */
+    flex-wrap: wrap; 
 }
 
 .gallery-item {
@@ -451,8 +444,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 425px; /* Limita el ancho máximo de cada item */
-    margin: 1rem; /* Añade margen para separar los items */
+    max-width: 425px; 
+    margin: 1rem;
 }
 
 .gallery-item img {
@@ -538,6 +531,19 @@ h1 {
 }
 
 /* Responsive */
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .card-images {
+        height: 300px; 
+    }
+}
+
 @media screen and (max-width: 768px) {
     .offers {
         flex-direction: column;
@@ -585,13 +591,13 @@ body {
 
 .cards-container {
     display: flex;
-    justify-content: space-between; /* Espacio uniforme entre las tarjetas */
+    justify-content: space-between; 
     align-items: flex-start;
-    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en filas si no caben */
-    gap: 1rem; /* Espaciado entre las tarjetas */
+    flex-wrap: wrap; 
+    gap: 1rem; 
     padding: 2rem;
-    max-width: 1200px; /* Limita el ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor en la página */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .card {
@@ -599,22 +605,22 @@ body {
     border-radius: 0.625rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-    width: calc(33.33% - 1rem); /* Asegura que solo quepan 3 tarjetas por fila */
+    width: calc(33.33% - 1rem); 
     padding: 1rem;
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 500px; /* Asegura que todas las tarjetas tengan la misma altura */
+    height: 500px; 
 }
 
 .card-images {
     position: relative;
     width: 100%;
-    height: 250px; /* Define un tamaño rectangular para el contenedor */
+    height: 250px; 
     overflow: hidden;
     margin-bottom: 1rem;
-    background-color: #f0f0f0; /* Color de fondo para imágenes que no llenen el contenedor */
+    background-color: #f0f0f0; 
 }
 
 .card-images img {
@@ -623,7 +629,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Asegura que las imágenes se vean completas dentro del contenedor */
+    object-fit: contain; 
     transition: opacity 0.3s ease;
 }
 
@@ -649,7 +655,7 @@ body {
     height: 10px;
     background-color: #d1a03f;
     border: none;
-    border-radius: 50%; /* Hace que los botones sean circulares */
+    border-radius: 50%; 
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -660,7 +666,7 @@ body {
 
 .image-selector button:focus {
     outline: none;
-    background-color: #073267; /* Cambia el color del punto seleccionado */
+    background-color: #073267; 
 }
 
 .select-button {
@@ -677,14 +683,4 @@ body {
     background-color: #073267;
 }
 
-/* Estilos responsivos para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
-    .card {
-        width: 100%; /* Las tarjetas ocuparán todo el ancho en pantallas pequeñas */
-        height: auto; /* Ajusta la altura automáticamente */
-    }
 
-    .card-images {
-        height: 300px; /* Reduce el tamaño de las imágenes en pantallas pequeñas */
-    }
-}

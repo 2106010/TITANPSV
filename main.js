@@ -1,7 +1,7 @@
 function iniciarMap() {
     var coord = { lat: 24.0144987, lng: -104.6443091 }; // Coordenadas de Durango, Dgo.
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
+        zoom: 17,
         center: coord
     });
     var marker = new google.maps.Marker({

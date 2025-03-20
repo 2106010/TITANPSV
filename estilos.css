@@ -37,19 +37,24 @@
 }
 
 .slogan {
-    font-size: 1.5rem; 
+    background-color: #ccccccb3;
+    border-radius: 20px;
+    font-size: 3rem; 
     line-height: 1.8; 
     margin-bottom: 1rem; 
     animation: fadeIn 1.5s ease-out; 
-    color: white;
+    color: #073267;
+    font-weight: bold;
     max-width: 50%; 
+    padding: 1rem;
 }
 
 .slogan a {
     display: inline-block; 
+    font-size: 1.5rem;
     margin-top: 1rem; 
     padding: 0.5rem 1rem; 
-    background-color: #d1a03f; 
+    background-color: #073267; 
     color: white; 
     text-decoration: none; 
     border-radius: 0.5rem; 
@@ -122,17 +127,19 @@ nav a:hover {
 }
 
 .banner {
-    background-image:url(fondo.jpg); 
-    background-size:100%;
+    background-image: url(fondo.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row; /* Coloca la imagen y el texto en una fila */
-    padding: 2rem 1rem; /* Espaciado interno */
-    text-align: center; /* Alinea el texto */
+    flex-direction: row; 
+    padding: 2rem 1rem; 
+    text-align: center; 
     height: 550px;
-    width: 100%; /* Ocupa todo el ancho */
-    color: white; /* Color del texto */
+    width: 100%; 
+  
 }
 
 body {
@@ -338,13 +345,21 @@ button:hover {
     }
 
     .banner {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; 
+        text-align: center; 
+        background-position: top; 
+        height: auto; 
+        padding: 3rem 1rem;
     }
 
     .banner-image {
-        margin-right: 0;
-        margin-bottom: 1.25rem;
+        width: 80%; 
+        max-width: 400px; 
+        margin-bottom: 1.5rem; 
+    }
+
+    .slogan {
+        max-width: 90%; 
     }
 
     .slider {
@@ -455,6 +470,25 @@ button:hover {
     height: auto;
     border-radius: 0.625rem;
     object-fit: cover;
+}
+
+.gallery-item p {
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    color: #073267; 
+    font-weight: 500; 
+    text-align: center; 
+    margin-top: 1rem;
+    padding: 0.5rem 1rem; 
+    background-color: #f9f9f9; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.gallery-item p:hover {
+    transform: translateY(-0.3rem); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 nav .logo {

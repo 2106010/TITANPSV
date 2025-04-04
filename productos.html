@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN PSV - Productos</title>
+    <!-- Enlace al CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="logo2.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo2.png" alt="Logo" class="logo-image">
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i class="bi bi-list"></i>
+        </button>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="index.html#ofertas">Ofertas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="cards-container">
+            <!-- ----------------------- -->
+            <div class="card">
+                <div class="card-images">
+                    <img src="productos/cerra.png" alt="Cerradura" class="active-image">
+                    <img src="productos/cerra2.png" alt="Cerradura 2" class="hidden-image">
+                    <img src="productos/cerra3.png" alt="Cerradura 3" class="hidden-image">
+                </div>
+                <h3>Cerradura Eléctrica</h3>
+                <p>Apertura con botón y llave.</p>
+                <div class="image-selector">
+                    <button onclick="cambiarImagen(this, 'productos/cerra.png')" aria-label="Imagen 1"></button>
+                    <button onclick="cambiarImagen(this, 'productos/cerra2.png')" aria-label="Imagen 2"></button>
+                    <button onclick="cambiarImagen(this, 'productos/cerra3.png')" aria-label="Imagen 3"></button>
+                </div>
+                <button class="select-button" onclick="enviarWhatsApp('Cerradura Eléctrica')">Solicitar cotización</button>
+            </div>
+            <!-- ------------------- -->
+
+            <!-- ----------------------- -->
+            <div class="card">
+                <div class="card-images">
+                    <img src="productos/cam1.png" alt="Cámara Domo" class="active-image">
+                    <img src="productos/cam2.png" alt="Cámara Domo - Alternativa" class="hidden-image">
+                    <img src="productos/cam3.png" alt="Cámara Domo - Alternativa" class="hidden-image">
+                </div>
+                <h3>DAHUA IPC-HDW1230T1-A-S5</h3>
+                <p>Cámara IP Domo 2MP con lente de 2.8 mm, ángulo de visión de 102 grados y micrófono integrado.</p>
+                <div class="image-selector">
+                    <button onclick="cambiarImagen(this, 'productos/cam1.png')" aria-label="Imagen 1"></button>
+                    <button onclick="cambiarImagen(this, 'productos/cam2.png')" aria-label="Imagen 2"></button>
+                    <button onclick="cambiarImagen(this, 'productos/cam3.png')" aria-label="Imagen 3"></button>
+                </div>
+                <button class="select-button" onclick="enviarWhatsApp('Cámara Domo')">Solicitar cotización</button>
+            </div>
+            <!-- ------------------- -->
+
+            <!-- ----------------------- -->
+            <div class="card">
+                <div class="card-images">
+                    <img src="productos/cam2.1.png" alt="Cámara PT" class="active-image">
+                    <img src="productos/cam2-2.png" alt="Cámara PT - Alternativa" class="hidden-image">
+                </div>
+                <h3>DAHUA DH-SD2A300NB-GNY-A-PV-0400</h3>
+                <p>Cámara IP PT de 3 MP con Full Color y Disuasión Activa, iluminador dual inteligente, lente fijo y alcance de 30 m.</p>
+                <div class="image-selector">
+                    <button onclick="cambiarImagen(this, 'productos/cam2.1.png')" aria-label="Imagen 1"></button>
+                    <button onclick="cambiarImagen(this, 'productos/cam2-2.png')" aria-label="Imagen 2"></button>
+                </div>
+                <button class="select-button" onclick="enviarWhatsApp('Cámara 3MP')">Solicitar cotización</button>
+            </div>
+            <!-- ------------------- -->
+
+            <!-- ----------------------- -->
+            <div class="card">
+                <div class="card-images">
+                    <img src="productos/dvr1.png" alt="DVR 8 Canales" class="active-image">
+                    <img src="productos/dvr2.png" alt="DVR 8 Canales - Alternativa" class="hidden-image">
+                    <img src="productos/dvr3.png" alt="DVR 8 Canales - Alternativa" class="hidden-image">
+                </div>
+                <h3>DAHUA XVR1B08-I</h3>
+                <p>DVR de 8 Canales 1080p. Incluye búsqueda inteligente de personas y vehículos, y codificación inteligente.</p>
+                <div class="image-selector">
+                    <button onclick="cambiarImagen(this, 'productos/dvr1.png')" aria-label="Imagen 1"></button>
+                    <button onclick="cambiarImagen(this, 'productos/dvr2.png')" aria-label="Imagen 2"></button>
+                    <button onclick="cambiarImagen(this, 'productos/dvr3.png')" aria-label="Imagen 3"></button>
+                </div>
+                <button class="select-button" onclick="enviarWhatsApp('DVR 8 Canales')">Solicitar cotización</button>
+            </div>
+            <!-- ------------------- -->
+
+            <!-- ----------------------- -->
+            <div class="card">
+                <div class="card-images">
+                    <img src="productos/cam3-1.png" alt="Cámara Bullet" class="active-image">
+                    <img src="productos/cam3-2.png" alt="Cámara Bullet - Alternativa" class="hidden-image">
+                    <img src="productos/cam3-3.png" alt="Cámara Bullet - Alternativa" class="hidden-image">
+                </div>
+                <h3>DAHUA HAC-B2A21N-U-0360B</h3>
+                <p>Cámara Bullet de 2 Megapíxeles, 1080p, lente de 3.6 mm, 80 grados de apertura y visión nocturna de 30 m.</p>
+                <div class="image-selector">
+                    <button onclick="cambiarImagen(this, 'productos/cam3-1.png')" aria-label="Imagen 1"></button>
+                    <button onclick="cambiarImagen(this, 'productos/cam3-2.png')" aria-label="Imagen 2"></button>
+                    <button onclick="cambiarImagen(this, 'productos/cam3-3.png')" aria-label="Imagen 3"></button>
+                </div>
+                <button class="select-button" onclick="enviarWhatsApp('Cámara Bullet')">Solicitar cotización</button>
+            </div>
+            <!-- ------------------- -->
+
+            <!-- ----------------------- -->
+            <div class="card">
+                <div class="card-images">
+                    <img src="productos/dvr2-1.png" alt="DVR 4 Canales" class="active-image">
+                    <img src="productos/dvr2-2.png" alt="DVR 4 Canales - Alternativa" class="hidden-image">
+                    <img src="productos/dvr2-3.png" alt="DVR 4 Canales - Alternativa" class="hidden-image">
+                </div>
+                <h3>DAHUA XVR1B04-I</h3>
+                <p>DVR de 4 Canales 1080p. Búsqueda inteligente de personas y vehículos, y codificación eficiente.</p>
+                <div class="image-selector">
+                    <button onclick="cambiarImagen(this, 'productos/dvr2-1.png')" aria-label="Imagen 1"></button>
+                    <button onclick="cambiarImagen(this, 'productos/dvr2-2.png')" aria-label="Imagen 2"></button>
+                    <button onclick="cambiarImagen(this, 'productos/dvr2-3.png')" aria-label="Imagen 3"></button>
+                </div>
+                <button class="select-button" onclick="enviarWhatsApp('DVR 4 Canales')">Solicitar cotización</button>
+            </div>
+            <!-- ------------------- -->
+        </div>
+    </main>
+
+    <a href="https://wa.me/6181588032" class="whatsapp-float" target="_blank" rel="noopener" title="Contáctanos por WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="logoo.png" alt="Logo" class="logo-image">
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/TitanPSV"><i class="bi bi-facebook"></i></a>
+        </div>
+        <div class="address">
+            <p><i class="bi bi-geo-alt"></i> Calle Verónica Castro #100 <br> Col. Valle del Guadiana, Durango, Dgo.</p>
+        </div>
+        <div class="contact-info">
+            <div class="phone-email">
+                <p><i class="bi bi-telephone"></i> 618-158-8032</p>
+                <p><i class="bi bi-envelope"></i> titan.seguridad.24@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Enlace a los archivos JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript para el menú toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
